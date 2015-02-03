@@ -11,6 +11,6 @@ elif person1_age > person2_age:
 elif person2_age > person1_age:
 	print "Person 2 er storre enn person 1"
 else:
-	print "waddup"
+	print "waddup, none of the were true"
 
 
