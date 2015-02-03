@@ -18,6 +18,7 @@ while menu_index != 9:
 	print "4. Edit message"
 	print "5. Show length of message"
 	print "9. Exit"
+	print "0. Choose Your Own Adventure"
 	menu_index = input("What would you like to do?: ")
 	if menu_index == 1:
 		print kvittr_messages
@@ -54,8 +55,7 @@ while menu_index != 9:
 			print "Welcome To Choose Your Own Adventure!"
 			print "1. START"
 			print "9. EXIT"
-
-			goto_start_menu = True
+			
 			adventure_main_menu_index = 0
 			adventure_menu_index = 0
 			adventure_school_index = 0
@@ -162,5 +162,9 @@ while menu_index != 9:
 					elif adventure_menu_index == 3:
 						print "You make your way down the road and feel like something is wrong. Out of the bushes jumps three ghouls and drag you back to their crypt, devouring your flesh. GAME OVER!"
 						break
+			elif adventure_main_menu_index == 9:
+				break
+			else:
+				print "Try Again.", adventure_main_menu_index ,"is not a valid number."
 		continue
 				
