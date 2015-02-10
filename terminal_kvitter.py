@@ -50,6 +50,11 @@ while menu_index != 9:
 			print message_index, kvittr_messages[message_index]
 		message_show_length_index = input("Select to show length.: ")
 		print "The message", kvittr_messages[message_index], "is",len(kvittr_messages[message_index]), "characters long.: "
+	elif menu_index == 6 or menu_index == 7 or menu_index == 8:
+		print menu_index, "is not an option. Try Again."
+	elif menu_index == 9:
+		print "Exiting Application..."
+		continue
 	elif menu_index == 0:
 		while adventure_main_menu_index != 9:
 			print "Welcome To Choose Your Own Adventure!"
